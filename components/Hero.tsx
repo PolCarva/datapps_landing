@@ -10,7 +10,7 @@ const Hero = () => {
         {/* Background illustration */}
         <div className="relative flex flex-col w-full md:w-1/2 justify-cente">
           <div
-            className="absolute -translate-y-1/2 top-1/2 w-[200%] h-svh fade-borders inset-0 hidden lg:block pointer-events-none"
+            className="absolute -translate-y-1/2 top-1/2 w-[200%] h-svh fade-borders inset-0 block pointer-events-none"
             aria-hidden="true"
           >
             <svg
