@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Container from "./Container";
 
 const navItems = [
   { name: "Nosotros", href: "/about" },
@@ -10,10 +11,10 @@ const navItems = [
 export default function Header() {
   return (
     <header className="absolute w-full z-30">
-      <div className="max-w-6xl mx-auto px-4 sm:px-6">
+      <Container>
         <div className="flex items-center justify-between h-20">
           {/* Site branding */}
-          <div>
+          <div className="w-1/3">
             {/* Logo */}
             <Link href="/" className="flex gap-2" aria-label="Datapps">
               <svg
@@ -38,16 +39,26 @@ export default function Header() {
             <ul className="flex gap-5 justify-center items-center">
               {navItems.map((item) => (
                 <li key={item.name}>
-                  <Link href={item.href} className="px-2 py-4 font-medium text-black">
+                  <Link
+                    href={item.href}
+                    className="px-2 py-4 font-medium text-black"
+                  >
                     {item.name}
                   </Link>
                 </li>
               ))}
             </ul>
           </nav>
-          <Link href={"/contact"} className="bg-black hover:bg-black-hover transition btn text-white px-6 py-3 rounded-lg border">Contactanos</Link>
+          <div className="w-1/3 flex justify-end">
+            <Link
+              href={"/contact"}
+              className="bg-black hidden md:block hover:bg-black-hover transition btn text-white px-6 py-3 rounded-lg border"
+            >
+              Contactanos
+            </Link>
+          </div>
         </div>
-      </div>
+      </Container>
     </header>
   );
 }
