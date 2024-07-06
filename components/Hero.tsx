@@ -1,7 +1,6 @@
 import Image from "next/image";
 import React from "react";
-import Container from "@/components/Container";
-import Link from "next/link";
+import Container from "./ui/Container";
 import Button from "./ui/Button";
 
 const Hero = () => {
@@ -38,11 +37,11 @@ const Hero = () => {
           </div>
 
           {/* Hero content */}
-          <div className="relative flex flex-col justify-center">
+          <div className="relative z-20 md:z-0 flex flex-col justify-center">
             {/* Section header */}
 
-            <div className="mx-auto text-center md:text-start pb-12 md:pb-16">
-              <div className="flex flex-col items-center md:items-start">
+            <div className="mx-auto text-start pb-12 md:pb-16">
+              <div className="flex flex-col items-start">
                 <h1 className="text-4xl md:text-6xl mb-4">
                   Los alumnos{" "}
                   <strong className="block">no son solo un número</strong>
@@ -57,14 +56,14 @@ const Hero = () => {
                 </div>
                 <p className="mt-4 text-gray-400">
                   Mejoramos el rendimiento de{" "}
-                  <strong className="text-black">2000+ Alumnos</strong>
+                  <strong className="text-black block md:inline-block">2000+ Alumnos</strong>
                 </p>
               </div>
             </div>
           </div>
         </div>
         <Image
-          className="hidden md:block fade-out-bottom max-w-[50%] h-full object-cover object-left absolute right-0"
+          className="hidden md:block fade-out-bottom max-w-[50%] h-full object-cover object-left absolute z-10 md:z-0 right-0"
           alt="Vista previa de la web de Datapps"
           src="/img/hero_img.png"
           width={758}
