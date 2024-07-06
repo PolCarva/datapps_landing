@@ -2,6 +2,7 @@ import Image from "next/image";
 import React from "react";
 import Container from "@/components/Container";
 import Link from "next/link";
+import Button from "./ui/Button";
 
 const Hero = () => {
   return (
@@ -51,18 +52,8 @@ const Hero = () => {
                   <strong>cada uno</strong>.
                 </p>
                 <div className="flex flex-col w-full md:flex-row gap-2 md:gap-5">
-                  <Link
-                    href={"/contact"}
-                    className="bg-black hover:bg-black-hover transition btn text-white px-6 py-3 rounded-lg border"
-                  >
-                    Contactanos
-                  </Link>
-                  <Link
-                    href={"/contact"}
-                    className="border border-black hover:text-white text-black hover:bg-black-hover transition px-6 py-3 rounded-lg"
-                  >
-                    Ver Video
-                  </Link>
+                  <Button href="/contact" text="Contactanos" type="primary" />
+                    <Button href="/video" text="Ver Video" type="secondary" />
                 </div>
                 <p className="mt-4 text-gray-400">
                   Mejoramos el rendimiento de{" "}

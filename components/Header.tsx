@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Container from "./Container";
+import Button from "./ui/Button";
 
 const navItems = [
   { name: "Nosotros", href: "/about" },
@@ -50,12 +51,7 @@ export default function Header() {
             </ul>
           </nav>
           <div className="w-1/3 flex justify-end">
-            <Link
-              href={"/contact"}
-              className="bg-black hidden md:block hover:bg-black-hover transition btn text-white px-6 py-3 rounded-lg border"
-            >
-              Contactanos
-            </Link>
+            <Button href="/contact" text="Contactanos" type="primary" />
           </div>
         </div>
       </Container>
