@@ -25,7 +25,7 @@ const Advantages = () => {
   }, []);
 
   return (
-    <section>
+    <section className="pb-20">
       <div ref={containerRef} className="max-w-screen-xl mx-auto px-4 sm:px-6">
         <div className="w-full space-y-4">
           <h2 className="text-4xl md:w-1/2 font-medium">
@@ -77,7 +77,7 @@ const Advantages = () => {
           </div>
         </div>
       </div>
-      <div className="mt-5">
+      <div className="mt-16">
         <Swiper
           className="w-full"
           style={{ padding: `0 max(${containerMarginLeft}px, 1rem)` }}

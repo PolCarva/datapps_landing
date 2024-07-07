@@ -14,7 +14,7 @@ const Button = ({
   type: "primary" | "secondary";
   className?: string;
 }) => {
-  const baseClasses = `transition w-full md:w-fit text-center px-6 py-3 ${className} ${
+  const baseClasses = `grid place-content-center transition w-full md:w-fit text-center px-6 py-3 ${className} ${
     rounded ? "rounded-full" : "rounded"
   }`;
   const primaryClasses = "bg-black btn hover:bg-black-hover text-white border";
