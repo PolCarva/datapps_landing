@@ -1,6 +1,7 @@
 import React from "react";
 import Container from "./ui/Container";
 import Image from "next/image";
+import Link from "next/link";
 
 const Facets = () => {
   return (
@@ -31,34 +32,43 @@ const Facets = () => {
             <div className="flex justify-between md:gap-16 gap-8 mt-4 md:flex-row flex-col">
               <div className="flex gap-10 md:gap-14">
                 <div className="flex-1">
-                  <h3 className="text-5xl pb-2 border-b border-black md:text-6xl font-black">+10K</h3>
-                  <p className="mt-2 text-sm">
+                  <h3 className="text-5xl pb-2 border-b border-black md:text-6xl font-black">
+                    +10K
+                  </h3>
+                  <p className="mt-2 text-sm text-gray-600">
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                   </p>
                 </div>
                 <div className="flex-1">
-                  <h3 className="text-5xl pb-2 border-b border-black md:text-6xl font-black">+10K</h3>
-                  <p className="mt-2 text-sm">
+                  <h3 className="text-5xl pb-2 border-b border-black md:text-6xl font-black">
+                    +10K
+                  </h3>
+                  <p className="mt-2 text-sm text-gray-600">
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                   </p>
-                </div>                   
+                </div>
               </div>
               <div className="flex gap-10 md:gap-14">
                 <div className="flex-1">
-                  <h3 className="text-5xl pb-2 border-b border-black md:text-6xl font-black">+10K</h3>
-                  <p className="mt-2 text-sm">
+                  <h3 className="text-5xl pb-2 border-b border-black md:text-6xl font-black">
+                    +10K
+                  </h3>
+                  <p className="mt-2 text-sm text-gray-600">
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                   </p>
                 </div>
                 <div className="flex-1">
-                  <h3 className="text-5xl pb-2 border-b border-black md:text-6xl font-black">+10K</h3>
-                  <p className="mt-2 text-sm">
+                  <h3 className="text-5xl pb-2 border-b border-black md:text-6xl font-black">
+                    +10K
+                  </h3>
+                  <p className="mt-2 text-sm text-gray-600">
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                   </p>
-                </div>                   
+                </div>
               </div>
             </div>
           </div>
+          <Link href="/contacto" className="w-full mt-2 md:w-fit mx-auto bg-black hover:bg-black-hover transition text-white text-center px-8 py-4 rounded-full">Contactate con nosotros</Link>
         </div>
       </Container>
     </section>

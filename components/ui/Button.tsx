@@ -10,7 +10,7 @@ const Button = ({
   href: string;
   type: "primary" | "secondary";
 }) => {
-  const baseClasses = "transition text-center px-6 py-3 rounded-lg";
+  const baseClasses = "transition w-full md:w-fit text-center px-6 py-3 rounded-lg";
   const primaryClasses = "bg-black btn hover:bg-black-hover text-white border";
   const secondaryClasses =
     "border border-black bg-white text-black hover:text-white hover:bg-black-hover";

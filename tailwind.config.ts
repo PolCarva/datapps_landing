@@ -13,6 +13,10 @@ const config: Config = {
           DEFAULT: "#1C1C1C",
           hover: "#2C2C2C",
         },
+        white: {
+          DEFAULT: "#FFFFFF",
+          secondary: "#F9F9F9",
+        },
         
       },
     },
