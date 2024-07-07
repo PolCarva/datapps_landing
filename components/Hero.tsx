@@ -10,31 +10,10 @@ const Hero = () => {
         {/* Background illustration */}
         <div className="relative flex flex-col w-full md:w-1/2 justify-cente">
           <div
-            className="absolute -translate-y-1/2 top-1/2 overflow-hidden max-w-[calc(100svw-2rem)] md:w-[200%] h-svh fade-borders inset-0 block pointer-events-none"
+            className="absolute -translate-y-1/2 top-1/2 overflow-hidden max-w-[calc(100svw-2rem)] md:w-[200%] h-svh inset-0 block pointer-events-none"
             aria-hidden="true"
           >
-            <svg
-              className="scale-150 md:scale-100 transform translate-x-1/2 translate-y-1/2 md:translate-x-0 md:translate-y-0"
-              viewBox="0 0 1440 680"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M767.616 223.899L852.875 371.754L767.616 519.609H597.097L511.838 371.754L597.097 223.899L767.616 223.899Z"
-                stroke="#D8D8D8"
-                strokeDasharray="12 12"
-              />
-              <path
-                d="M572.721 -113.673L657.981 34.1819L572.721 182.037H402.203L316.943 34.1819L402.203 -113.673L572.721 -113.673Z"
-                stroke="#D8D8D8"
-                strokeDasharray="12 12"
-              />
-              <path
-                d="M257.838 73.8672L556.884 588.477L470.938 736.516H299.045L0 221.906L85.9461 73.8672L257.838 73.8672Z"
-                stroke="#D8D8D8"
-                strokeDasharray="12 12"
-              />
-            </svg>
+           <Image className="h-full fade-borders w-full md:w-2/3 object-cover" alt="Hero Pattern" src="/img/hero_pattern.svg" width={835} height={858} />
           </div>
 
           {/* Hero content */}
