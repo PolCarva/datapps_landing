@@ -10,7 +10,7 @@ const Facets = () => {
         <div className="flex flex-col gap-5">
           <div>
             <span className="text-lg">Eleginos</span>
-            <h2 className="text-5xl font-bold mt-2">¿Por qué Datapps?</h2>
+            <h2 className="text-3xl md:text-5xl font-bold mt-2">¿Por qué Datapps?</h2>
           </div>
           <div className="flex w-full flex-col">
             <div className="flex gap-5">

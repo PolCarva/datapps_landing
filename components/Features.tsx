@@ -16,28 +16,30 @@ const Features = () => {
             uno.
           </p>
         </div>
-        <Feature
-          title="Analiza el panorama completo de cada alumno"
-          text="Ultrices velit odio amet vitae vel. Volutpat tortor laoreet euismod cursus a in ut."
-          buttonText="Saber Más"
-          buttonHref="/"
-          imageSrc="/img/feature_01.png"
-        />
-        <Feature
-          reverse
-          title="Comprende sus virtudes y debilidades"
-          text="Aliquet integer arcu mollis ut tellus ut quisque aliquam turpis. Eu morbi consequat non faucibus sit."
-          buttonText="Saber Más"
-          buttonHref="/"
-          imageSrc="/img/feature_02.png"
-        />
-        <Feature
-          title="Mejora su rendimiento con mejor comprensión de los datos"
-          text="Vel platea sed eget morbi cras sed fermentum sit. Sit sed facilisis et at in mi augue eu aliquet."
-          buttonText="Saber Más"
-          buttonHref="/"
-          imageSrc="/img/feature_03.png"
-        />
+        <div className="space-y-10">
+          <Feature
+            title="Analiza el panorama completo de cada alumno"
+            text="Ultrices velit odio amet vitae vel. Volutpat tortor laoreet euismod cursus a in ut."
+            buttonText="Saber Más"
+            buttonHref="/"
+            imageSrc="/img/feature_01.png"
+          />
+          <Feature
+            reverse
+            title="Comprende sus virtudes y debilidades"
+            text="Aliquet integer arcu mollis ut tellus ut quisque aliquam turpis. Eu morbi consequat non faucibus sit."
+            buttonText="Saber Más"
+            buttonHref="/"
+            imageSrc="/img/feature_02.png"
+          />
+          <Feature
+            title="Mejora su rendimiento con mejor comprensión de los datos"
+            text="Vel platea sed eget morbi cras sed fermentum sit. Sit sed facilisis et at in mi augue eu aliquet."
+            buttonText="Saber Más"
+            buttonHref="/"
+            imageSrc="/img/feature_03.png"
+          />
+        </div>
       </Container>
     </section>
   );

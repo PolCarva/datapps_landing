@@ -1,10 +1,11 @@
 "use client";
 import React, { useEffect, useState, useRef } from "react";
-import Container from "./ui/Container";
 import Advantage from "./ui/Advantage";
 import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation } from "swiper/modules";
 
 import "swiper/css";
+import "swiper/css/navigation";
 
 const Advantages = () => {
   const containerRef = useRef<HTMLDivElement>(null);
@@ -16,11 +17,10 @@ const Advantages = () => {
       setContainerMarginLeft(margin);
     };
 
-    handleResize(); // Initial calculation
-    window.addEventListener("resize", handleResize); // Update on resize
-
+    handleResize(); 
+    window.addEventListener("resize", handleResize); 
     return () => {
-      window.removeEventListener("resize", handleResize); // Cleanup listener
+      window.removeEventListener("resize", handleResize);
     };
   }, []);
 
@@ -28,7 +28,7 @@ const Advantages = () => {
     <section className="pb-20">
       <div ref={containerRef} className="max-w-screen-xl mx-auto px-4 sm:px-6">
         <div className="w-full space-y-4">
-          <h2 className="text-4xl md:w-1/2 font-medium">
+          <h2 className="text-3xl md:text-5xl md:w-1/2 font-bold">
             Ventajas de utilizar Datapps en tu colegio
           </h2>
           <div className="w-full flex-col md:flex-row flex items-end justify-between">
@@ -37,7 +37,7 @@ const Advantages = () => {
               organización y rendimiento de tu colegio
             </p>
             <div className="flex gap-2">
-              <button className="bg-primary hover:border-black hover:bg-black transition group w-10 grid place-content-center p-3 rounded-full border border-black">
+              <button id="swiper-button-prev" className="bg-primary swiper-btn hover:border-black hover:bg-black transition group w-10 grid place-content-center p-3 rounded-full border border-black">
                 <svg
                   width="14"
                   height="14"
@@ -55,7 +55,7 @@ const Advantages = () => {
                   />
                 </svg>
               </button>
-              <button className="rotate-180 bg-primary hover:border-black hover:bg-black transition group w-10 grid place-content-center p-3 rounded-full border border-black">
+              <button id="swiper-button-next" className="rotate-180 swiper-btn bg-primary hover:border-black hover:bg-black transition group w-10 grid place-content-center p-3 rounded-full border border-black">
                 <svg
                   width="14"
                   height="14"
@@ -81,6 +81,12 @@ const Advantages = () => {
         <Swiper
           className="w-full"
           style={{ padding: `0 max(${containerMarginLeft}px, 1rem)` }}
+          modules={[Navigation]}
+          navigation={{
+            nextEl: "#swiper-button-next",
+            prevEl: "#swiper-button-prev",
+            disabledClass: "opacity-50 hover:!bg-white hover:!border-black hover:!text-black",
+          }}
           spaceBetween={20}
           slidesPerView={1.2}
           breakpoints={
