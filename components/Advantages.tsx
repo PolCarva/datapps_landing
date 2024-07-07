@@ -25,7 +25,7 @@ const Advantages = () => {
   }, []);
 
   return (
-    <section className="pb-20">
+    <section>
       <div ref={containerRef} className="max-w-screen-xl mx-auto px-4 sm:px-6">
         <div className="w-full space-y-4">
           <h2 className="text-3xl md:text-5xl md:w-1/2 font-bold">
@@ -36,7 +36,7 @@ const Advantages = () => {
               Te mostramos las razones por las que Datapps puede mejorar la
               organización y rendimiento de tu colegio
             </p>
-            <div className="flex gap-2">
+            <div className="flex gap-2 mt-16 md:mt-6">
               <button id="swiper-button-prev" className="bg-primary swiper-btn hover:border-black hover:bg-black transition group w-10 grid place-content-center p-3 rounded-full border border-black">
                 <svg
                   width="14"
@@ -77,7 +77,7 @@ const Advantages = () => {
           </div>
         </div>
       </div>
-      <div className="mt-16">
+      <div className=" mt-5">
         <Swiper
           className="w-full"
           style={{ padding: `0 max(${containerMarginLeft}px, 1rem)` }}

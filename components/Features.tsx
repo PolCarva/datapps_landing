@@ -4,7 +4,7 @@ import Feature from "./ui/Feature";
 
 const Features = () => {
   return (
-    <section className="mt-16">
+    <section>
       <Container>
         <div className="mb-8">
           <h2 className="text-3xl md:text-5xl text-center font-bold">
