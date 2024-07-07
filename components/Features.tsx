@@ -7,10 +7,10 @@ const Features = () => {
     <section className="mt-16">
       <Container>
         <div className="mb-8">
-          <h2 className="text-5xl text-center font-bold">
+          <h2 className="text-3xl md:text-5xl text-center font-bold">
             Un producto, <span className="block">miles de soluciones</span>
           </h2>
-          <p className="text-gray-600 text-lg text-center md:w-1/2 mx-auto mt-5 text-balance">
+          <p className="text-gray-600 text-base md:text-lg text-center md:w-1/2 mx-auto mt-5 text-balance">
             Personaliza la educación de <strong>cada alumno</strong> accediendo
             a su registro, asegurando así construir una imagen completa de cada
             uno.

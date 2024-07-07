@@ -16,6 +16,7 @@ const config: Config = {
         white: {
           DEFAULT: "#FFFFFF",
           secondary: "#F9F9F9",
+          tertiary: "#E4E4E4",
         },
         
       },
