@@ -2,6 +2,7 @@ import React from "react";
 import Container from "./ui/Container";
 import Image from "next/image";
 import Link from "next/link";
+import Button from "./ui/Button";
 
 const Facets = () => {
   return (
@@ -68,7 +69,13 @@ const Facets = () => {
               </div>
             </div>
           </div>
-          <Link href="/contacto" className="w-full mt-2 md:w-fit mx-auto bg-black hover:bg-black-hover transition text-white text-center px-8 py-4 rounded-full">Contactate con nosotros</Link>
+            <Button
+              href="/contact"
+              text="Contactate con nosotros"
+              type="primary"
+              rounded
+              className="w-full mt-5 font-semibold px-10 mx-auto"
+            />
         </div>
       </Container>
     </section>

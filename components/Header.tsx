@@ -50,7 +50,7 @@ export default function Header() {
               ))}
             </ul>
           </nav>
-          <div className="w-1/3 flex justify-end">
+          <div className="w-1/3 justify-end  hidden md:flex">
             <Button href="/contact" text="Contactanos" type="primary" />
           </div>
         </div>

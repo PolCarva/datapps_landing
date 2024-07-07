@@ -24,3 +24,7 @@
 .fade-out-bottom {
   mask-image: linear-gradient(rgba(0, 0, 0, 1) 70%, rgba(0, 0, 0, 0) 90%);
 }
+
+.bg-transition-white-secondary {
+  background-image: linear-gradient(180deg, #fff, #F9F9F9 5%, #F9F9F9 95%, #FFFF);
+}

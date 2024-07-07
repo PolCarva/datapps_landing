@@ -6,10 +6,11 @@ export default function Home() {
   return (
     <main className="flex flex-col gap-10 md:gap-16">
       <Hero />
-      <div className="bg-gradient-to-t from-90% from-white-secondary to-white">
+      <div className="bg-transition-white-secondary py-16">
         <Facets />
         <Features />
       </div>
+
     </main>
   );
 }
