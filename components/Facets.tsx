@@ -73,7 +73,7 @@ const Facets = () => {
               text="Contactate con nosotros"
               type="primary"
               rounded
-              className="w-full mt-5 font-semibold px-10 mx-auto"
+              className="w-full mt-5 font-semibold py-5 px-12 mx-auto"
             />
         </div>
       </Container>
